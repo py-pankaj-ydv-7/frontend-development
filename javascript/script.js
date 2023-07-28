@@ -36,7 +36,7 @@
 // function ka matlab aap kuchh code ko likh kar koi naam de sakte ho and baad mein usey use kar sakte ho with that name as many times .
 // function = code ko naam dena 
 
-//functions mainly teen kaam k liye hote hai.functions.functions
+//functions mainly teen kaam k liye use hote hai.functions.functions
 //1) jab aapka code aap turant nahi chalana chaahte ho future mein chalana chahate ho  
 //2) jab aapka code aap reuse karna chahte ho 
 //3) jab aap code chalana chahate ho with different data
@@ -57,27 +57,111 @@
 // object hai ek bande ki details ko hold karna, in a key value pair 
 
 //1) blank obj
-var a = {}
+// var a = {}
 
-// 2) filled obj 
+// // 2) filled obj 
 
-var a={
-    age :24,
-    name: "Harsh",
-    email: "email@male.com",
-    linkedin: "harsh",
-    contact: 356654365334
-}
+// var a={
+//     age :24,
+//     name: "Harsh",
+//     email: "email@male.com",
+//     linkedin: "harsh",
+//     contact: 356654365334
+// }
 
-var ghadi ={
-    brand: "kenneth cole",
-    price: "16k",
-    color: "silvar",
-    type: "automatic",// or ye sab properties hai
-    digital: false
- //   kuchhbolo: function(){}// ye method hai q ki isme function hai 
-}
+// var ghadi ={
+//     brand: "kenneth cole",
+//     price: "16k",
+//     color: "silvar",
+//     type: "automatic",// or ye sab properties hai
+//     digital: false
+//  //   kuchhbolo: function(){}// ye method hai q ki isme function hai 
+// }
 
-// hum objects ki values bhi change kar sakte hai 
+// // hum objects ki values bhi change kar sakte hai 
 
-ghadi.brand="puma"
+// ghadi.brand="puma"
+
+/***** java script advance crash course  */
+
+// the difference between var and let const
+
+// var old js mein tha 
+// var function scoped hota hai => var apne parent function mein kahi bhi use ho sakta hai
+// var adds itself to the window object
+
+// function abcd(){
+//     for(var i = 1; i<12;i++){
+//         console.log(i);
+//     }
+//     console.log(i);
+// }
+// abcd();
+// let const new js mein hai
+// let const braces scoped hota hai 
+// let const does't adds
+//js mein kai saate features hai par kuchh features jo hum use  karte hai wo features wo nahi hai par fir bhi use kar paate hai kyoki wo features js langauge use kar leti hai window se, aur window hai ek box of features given by browser to use with js .
+// features ---------------->
+// alert , console aur bhi bahut saare . 
+
+// Heap memory --->>   jitne bhi variables ya data hum baanaate hai unhe store kahi to karna padta hai uske liye hota hai heap memory.
+
+
+//Execution Context ---> execution context ka matalab jab bhi hum function chalaayenge fnc apna ek khudka ek imaginary continer bana lega jisme uski teen chije hogi :
+//1) variables
+//2)functions inside that parent fnc
+//3)lexical environment of that function// ye batata hai sir aap kin kin chijo ko use kar sakte ho ya nahi .
+
+// defination of ec -->> execution context is a container where the function's code is executed and it's created whenever a function is called , it contains 3 things, variables, functions and lexical environment.
+
+// lexical environment hota hai ek chart jisme ye likha hota hai ke aapka paricular function ki cheejo ko access kar sakta hai and kinki nahi , matlab ki it holds it's scope and scope chain
+
+
+//turthy and falsy ---> js mein kuchh bhi likho wo mainly do prakaar mein se kisi ek prakaar ko belong karti hai . 
+// falsy values ye hai = 0  false undefined null NaN document.all
+// turthy values , or baki sab r=truthy values hi hoti hai
+
+// foreach loop srf array pe chalta hai matlab ki jab bhi tumhaare paas ek array ho, tab use mein kaun aata hai foreach loop aata hai
+// for example 
+
+// var a = [1,2,23,34,4,23,4,3,45,54,3,23];
+
+// a.forEach(function(val){
+//     console.log(val+2);
+// })
+
+//foreach kabhi bhi by default aapke array mein change nahi karta wo aapko changes krke deta hai array ki temporary copy par jiske wajah se array jumesha same rehta hai
+
+//forin--> objects par loop karne ke liye hota hai forin loop
+
+// var obj={
+//     name:"pankaj",
+//     age:22,
+//     city:"bhopal"
+// }
+
+// for(var key in obj){
+
+//    // console.log(key)
+//    // console.log(obj[key]);
+//    // console.log(key,obj[key]);
+// }
+
+//callback functions --> jab bhi koi aisa code jo baad me chalta hai aap  likhoge , kyuki wo code baad mein chalta hai js ko ye pata nahi hota ke wo complete hua ya nahi , aise code ke comletion par js ko btaya jaata hai ke wo complete hogya aur aap use chala sakte ho, ye bataane ka kaam callback ka hai.
+// ye a sycronous js hai
+
+// setTimeout(function(){
+//     console.log("2 secound baad chala ");
+// },  2000);// yahi call back function hai
+
+
+//aisa code jo baad me chalta hai use hum ek function dedete hai ke bhaiya jab complete ho jaana to ye function chala dena , aur wo function ja hum dete hai wo ek normal fnc hi hota hai aur use kahte hai callback fnc
+
+// first class functions 
+// js mein ek concept hai jiska matlab hota hai ki aap fnc ko use kr sakte ho as a value 
+
+// function abcd (a){
+//     a();
+// }
+
+// abcd(function(){console.log("hello");})
