@@ -1,3 +1,6 @@
+// variables :- data store karne k liye use hota hai variables.
+
+
 // hoisting -- variable and functions are hoisted which means there declaration is moved on the top of code 
 
 // types in js 
@@ -45,7 +48,7 @@
 //     console.log("hello ");
 // }
 
-
+//array = group of values 
 // arrays = hum ek variable mein ek value store kar paate hai par jab humein ek se jaada value store karni ho tab fir use hota hai array ka , matlab ki array aapko freedom deta hai ek se jaada value use karne ki 
 
 // var a =[12,13];
@@ -56,7 +59,7 @@
 
 // object hai ek bande ki details ko hold karna, in a key value pair 
 
-//1) blank obj
+//1) blank object
 // var a = {}
 
 // // 2) filled obj 
@@ -75,7 +78,7 @@
 //     color: "silvar",
 //     type: "automatic",// or ye sab properties hai
 //     digital: false
-//  //   kuchhbolo: function(){}// ye method hai q ki isme function hai 
+//  //   kuchhbolo: function(){}// ye method hai q ki isme function hai (method me bhi property hoti hai)
 // }
 
 // // hum objects ki values bhi change kar sakte hai 
@@ -100,25 +103,25 @@
 // let const new js mein hai
 // let const braces scoped hota hai 
 // let const does't adds
-//js mein kai saate features hai par kuchh features jo hum use  karte hai wo features wo nahi hai par fir bhi use kar paate hai kyoki wo features js langauge use kar leti hai window se, aur window hai ek box of features given by browser to use with js .
+//js mein kai saare features hai par kuchh features jo hum use  karte hai wo features wo nahi hai par fir bhi use kar paate hai kyoki wo features js langauge use kar leti hai window se, aur window hai ek box of features given by browser to use with js .
 // features ---------------->
 // alert , console aur bhi bahut saare . 
 
 // Heap memory --->>   jitne bhi variables ya data hum baanaate hai unhe store kahi to karna padta hai uske liye hota hai heap memory.
 
 
-//Execution Context ---> execution context ka matalab jab bhi hum function chalaayenge fnc apna ek khudka ek imaginary continer bana lega jisme uski teen chije hogi :
+//Execution Context --->(imaginary dabbba  ) execution context ka matalab jab bhi hum function chalaayenge fnc apna ek khudka ek imaginary continer bana lega jisme uski teen chije hogi :
 //1) variables
 //2)functions inside that parent fnc
 //3)lexical environment of that function// ye batata hai sir aap kin kin chijo ko use kar sakte ho ya nahi .
 
 // defination of ec -->> execution context is a container where the function's code is executed and it's created whenever a function is called , it contains 3 things, variables, functions and lexical environment.
 
-// lexical environment hota hai ek chart jisme ye likha hota hai ke aapka paricular function ki cheejo ko access kar sakta hai and kinki nahi , matlab ki it holds it's scope and scope chain
+// lexical environment hota hai ek chart jisme ye likha hota hai ke aapka particular function kin cheejo ko access kar sakta hai and kinki nahi , matlab ki it holds it's scope and scope chain
 
 
 //turthy and falsy ---> js mein kuchh bhi likho wo mainly do prakaar mein se kisi ek prakaar ko belong karti hai . 
-// falsy values ye hai = 0  false undefined null NaN document.all
+// falsy values ye hai = 0  false undefined null NaN(not a number) document.all
 // turthy values , or baki sab r=truthy values hi hoti hai
 
 // foreach loop srf array pe chalta hai matlab ki jab bhi tumhaare paas ek array ho, tab use mein kaun aata hai foreach loop aata hai
@@ -130,7 +133,7 @@
 //     console.log(val+2);
 // })
 
-//foreach kabhi bhi by default aapke array mein change nahi karta wo aapko changes krke deta hai array ki temporary copy par jiske wajah se array jumesha same rehta hai
+//foreach kabhi bhi by default aapke array mein change nahi karta wo aapko changes krke deta hai array ki temporary copy par jiske wajah se array humesha same rehta hai
 
 //forin--> objects par loop karne ke liye hota hai forin loop
 
@@ -143,12 +146,12 @@
 // for(var key in obj){
 
 //    // console.log(key)
-//    // console.log(obj[key]);
-//    // console.log(key,obj[key]);
+//    // console.log(obj[key]); // is se sirf j ki values print hogi.
+//    // console.log(key,obj[key]); // is se dono ek sath print ho jayenge .
 // }
 
 //callback functions --> jab bhi koi aisa code jo baad me chalta hai aap  likhoge , kyuki wo code baad mein chalta hai js ko ye pata nahi hota ke wo complete hua ya nahi , aise code ke comletion par js ko btaya jaata hai ke wo complete hogya aur aap use chala sakte ho, ye bataane ka kaam callback ka hai.
-// ye a sycronous js hai
+// ye asycronous js hai
 
 // setTimeout(function(){
 //     console.log("2 secound baad chala ");
@@ -165,3 +168,24 @@
 // }
 
 // abcd(function(){console.log("hello");})
+
+
+/*** how arraysare made  behinds the sceens */
+
+// var arr = [1,2,3,4];
+
+// arr[-1] = 2;
+
+// array ka pata kese karenge ki vo kab array hai or kab bo object hai .
+
+//Array.isArray([]) ---> ye hame true dega 
+//Array.isArray({}) ---> ye hame false dega 
+
+
+/** how to delete  object prop  */
+
+var a = {
+    name :"pankaj",
+    age:22
+}
+delete a.age;
