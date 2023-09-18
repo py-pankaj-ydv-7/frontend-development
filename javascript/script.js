@@ -184,8 +184,127 @@
 
 /** how to delete  object prop  */
 
-var a = {
-    name :"pankaj",
-    age:22
-}
-delete a.age;
+// var a = {
+//     name :"pankaj",
+//     age:22
+// }
+// delete a.age;
+
+
+
+/*************************************** Master Advanced javascript concepts and become a javascript ninza */
+
+// higher order functions
+
+// function abcd(val){
+
+// }
+// abcd(function(){})
+
+// constructor function
+
+/*  */
+
+// function saanchaofBiscuit(){
+//     this.width =12;
+//     this.height=22;
+//     this.color = "brown";
+//     this.taste = "sugary";
+// }
+
+// var bis1 = new saanchaofBiscuit();
+// var bis2 = new saanchaofBiscuit();
+// var bis3 = new saanchaofBiscuit();
+
+// new => jab bhi new lagta hai humesha ek blank object apne man me bana lo 
+// {
+
+// }
+
+// function abcd(){
+//     this.age=12;
+// }
+
+// new abcd()
+
+// {
+
+//     age:12;
+// }
+
+//iife=> immediately invoked function expression 
+//iife hai function ko turant chala ne ki kala , 9s tareeke se ki hum log koi private variable bana paaye 
+// ye private variable banane k kaam ataa hai .
+
+//prototype inheritance 
+
+// var human = {
+//     canFly : false,
+//     canTalk: true,
+//     canWalk: true,
+//     haveEmotions: true,
+//     hasFourLegs: false
+// }
+
+// var sheriyansStudent = {
+//     canMakeAmazingWebsite: true,
+//     canMakeAwesomeAnimations: true,
+//     canMakerWorldClassAwwwardedWebsites: true
+
+// }
+
+// sheriyansStudent.__proto__ = human;
+
+// this ki baat chal rahi hai 
+
+// function abcd(){
+//     console.log(this);
+// }
+// abcd();// ye window dega 
+
+
+// yaha methods ki baat chal rahi hai 
+
+// ek function jo object k andar bana ho, use method kahate hai 
+
+// var obj ={
+//     baatkaro: function(){ // for example ye method hai 
+//     console.log(this);
+// }
+// }
+// obj.baatkaro();
+
+// yaha call apply bind ki baat chal rahi hai
+
+// function abcd (){
+//     console.log(this.age);
+// }
+// var obj = {age : 24} // this is call
+
+// abcd.call(obj)
+
+// function abcd (val , val2, val3){
+//     console.log(this,val, val2,val3);
+// }
+// var obj = {age : 24} // this is call
+
+// abcd.call(obj,1,2,3)
+
+// function abcd (val , val2, val3){
+//     console.log(this,val, val2,val3);
+// }
+// var obj = {age : 24} // this is call
+
+// abcd.apply(obj,[1,2,3])
+
+
+//bhind
+
+// function abcd (){
+//     console.log(this);
+// }
+// var obj = {age : 24} // this is bind ye code ko chalata nahi hai
+
+// abcd.bind(obj,1,2,3);
+
+// pure or impure function 
