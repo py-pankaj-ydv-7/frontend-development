@@ -308,3 +308,134 @@
 // abcd.bind(obj,1,2,3);
 
 // pure or impure function 
+
+
+
+
+
+/********************************* master async javascript , wait it is and how to use it  */
+
+//ek kaam jab tak complete nahi hoga tab tak dusra kaam nahi hoga , ek ke baad ek kaam perform hoga use hi hum sync kahte hai 
+// kuch task ko hum ek sath chala de or jiska ans sabse pahle milte jaye use hum A sync bolte hai .
+
+
+//sync matlab ek ke baad dusara hoga, jab tak ek command complete naa ho, dusra shuru nahi hoga .
+//Async matalab saaare kaaam ek saath  shuru kardo , jiska ans pahle aaajaye uska jaawab de dena.
+
+// kaise pata chalta hai ki hum sync code likh rahe ya async ?
+
+/* agar in sab ka use kar rahe hai to ye async  hai 
+ setTimeout 
+ setInerval
+ promises
+ fetch                   
+ axios
+ xmlhttpRequest  */
+
+
+ // async js hai kya ? 
+ // kai baar aapka final code depended hota hai kisi aur k server par , is case mein humein nahi pata hota ki answer uske server se kab laut kar aayega, to hum kya nahi kr sakte is writting sync code , isse nipatne ke liye hum log async code likh dete hai taaki blocking naa ho and jab bhi anwer aaye humara answer ke respect mein chalne waala code chal jaaye 
+
+ ///* event loop side stack se main stack me chije leke attaa hai .
+
+
+ /**
+ fetch 
+ axios 
+ promises  agar hai sab hai to async or isko baaa d me chalane k liye use karte hai (then catch , callbacks  , async await)
+ settimeout
+ setinterval
+
+
+  */
+
+ // ****  callback humesha ek function hota hai, ye sirf tab chalta hai jab async code ka completion hojaata hai
+
+ /**
+  for example :- setTimeout(function(){}, 10000) ise ko kahte hai call back fuction
+  */
+
+  //async code likhne ke liye 
+
+//   fetch 
+//   axios 
+//   promises  
+//   settimeout
+//   setinterval
+ 
+  // inka ans chalane k liye hota hai callbacks , then catch , async await
+  
+ /* 
+ promises example  ..............
+
+ var ans = new Promise((res,rej)=>{
+    if(true){
+        return res();
+    }
+    else {
+        return rej();
+    }
+ })
+
+ ans
+ .then(function(){
+    console.log("resolve hogaya tha ")
+ })
+ .catch(function()){
+    console.log("reject hua tha !")
+ }
+ */
+
+ // user will ask for a number between 0 se 9 and if the number is below 5 resolve if not reject
+
+//  var ans = new Promise((res, rej)=>{
+//     var n = Math.floor(Math.random()* 10);
+
+//     if(n<5){
+//         return res();
+//     }
+//     else {
+//         return rej();
+//     }
+//  })
+
+//  ans.then(function(){
+//     console.log("below");
+//  })
+
+//  .catch(function(){
+//     console.log("above"); 
+//  })
+
+
+
+
+// async await :- koi bhi esa function jisme aap async code likhenge , kyoki async code hai to aap promises ka istemaal kar sakte hai, jab uska answer aayega aapko then lagana padega , us then ko lagaane se bachne ke liye , aap async await ka istemaal kar sakte hai.
+
+
+// dekho jab bhi koi code async hai to aapko uske liye wait karna padta hai kyoki humein nahi pata uska answer kab aayega
+// for example 
+
+// async function abcd(){
+//    let raw= await fetch(`https://randomuser.me/api/`);
+//    let ans = await raw.json();
+//    console.log(ans);
+// }
+
+ // 5 use cases ekdum real world waale 
+ // node mein jab db
+ //fetch 
+ //settimeout
+ //setinterval
+
+ //[concept aside ]
+ //concurrency and parallelism
+ // concureency => js mein sync code and async code ek saath process ho raha tha ye hai concurrency 
+
+ //parallelism => focus jaada karta hai different processors and uske cores par kaam ko chalaane par 
+ //throttling => kisi code ko control karna number of executions
+
+
+ /*************************************** DOM :- DOCUMENT OBJECT MODEL , BASICS ****************************/
+
+ 
