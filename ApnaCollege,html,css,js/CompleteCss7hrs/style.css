@@ -1,0 +1,26 @@
+*{
+    color: pink;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: red;
+}
+p{
+    color: green;
+}
+
+button{
+    color: rgb(61, 196, 31);
+    background-color: rgb(237, 244, 237);
+}
+
+body{
+    background-color: rgb(181, 147, 32);
+} 
+
+button{
+    background-color: green;
+}
