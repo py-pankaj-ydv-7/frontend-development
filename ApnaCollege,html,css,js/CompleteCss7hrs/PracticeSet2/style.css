@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#heading1{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#paragraph{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#outer{
+    /* text: size 25px; */
+    font-size: 25px;
+}
+
+#inner{
+    /* text:size 10px; */
+    font-size: 10px;
+}
