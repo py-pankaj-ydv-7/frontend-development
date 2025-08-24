@@ -1,0 +1,30 @@
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+} */
+ *
+
+ body{
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+ #navbar{
+    height: 60px;
+    background-color: #0f1111;
+ }
+ a{
+    text-decoration: none;  
+    color: white;
+
+    margin-right: 150px;
+ }
+ button{
+    background-color: #f08804;
+ }
+ #logo{
+    color: #f08804;
+    font-size: 25px;
+ }
