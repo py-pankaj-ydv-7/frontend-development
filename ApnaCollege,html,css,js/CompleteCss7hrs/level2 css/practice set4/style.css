@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#navbar{
+    background-color: rgb(49, 45, 45);
+    height: 55px;
+}
+#logo{
+    color: chocolate;
+    font-size: 25px;
+    
+}
+
+a{
+    text-decoration: none;
+    margin-right: 200px;
+    color: white;
+}
+
+button{
+    color: white;
+    background-color: chocolate;
+    padding: 2px;
+}
+
+.div1{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: solid black;
+    background-color: rgba(255,0,0,0.5);
+}
+.div2{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: solid black;
+    background-color: rgba(0,255, 0,0.5);
+}
+.div3{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: solid black;
+    background-color: rgba(0,0,255, 0.5) ;
+}
+#main{
+    height: 600px;
+}
+
+#footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(49, 45, 45);
+
+}
