@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.navbar{
+    background-color: pink;
+    /* height: 85px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    
+
+}
+
+a{
+    text-decoration: none;
+    /* background-color: aqua;    */
+    color: red;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+
+.outerdiv{
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerdiv{
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+    
+}
+
+/* align self ki higher priorety hoti hai  */
