@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+
+div{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+
+#container{
+    width: 800px;
+    height: 200px;
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    /* align-items: center;
+    justify-content: space-around; */
+}
+
+.box1{
+
+    background-color: red;
+}
+.box2{
+  
+    background-color: blue;
+}
+.box3{
+    
+    background-color: green;
+}
+.box4{
+   
+    background-color: black;
+}
+.box5{
+ 
+    background-color: aqua;
+}
