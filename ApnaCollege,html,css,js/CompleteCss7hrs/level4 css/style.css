@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+/* body{
     text-align: center;
 }
 
@@ -25,7 +26,7 @@ div{
     justify-content: space-around;
 
     /* align-items: center;
-    justify-content: space-around; */
+    justify-content: space-around; *//*
 }
 
 .box1{
@@ -47,4 +48,33 @@ div{
 .box5{
  
     background-color: aqua;
+} */
+
+div{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+@media (width: 600px){
+    div{
+        background-color: pink;
+    }
+}
+
+@media (max-width: 400px){
+    div{
+        background-color: yellow;
+    }
+}
+@media (min-width: 400px){
+    div{
+        background-color: pink;
+    }
+}
+
+@media (min-width:200px) and (max-width:300px){
+    div{
+        background-color: blue;
+    }
 }
