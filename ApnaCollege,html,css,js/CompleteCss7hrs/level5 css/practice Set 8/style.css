@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    border:20px solid blue ;
+    border-top: 20px solid black ;
+    text-align: center;
+    padding:40px;
+    animation: spinAnimate 1s ease-in 0s infinite normal;
+  
+}
+  @keyframes spinAnimate{
+        from{
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }

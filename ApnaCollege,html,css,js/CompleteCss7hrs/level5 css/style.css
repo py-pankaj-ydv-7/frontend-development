@@ -1,0 +1,56 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: solid black 2px;
+    border-radius: 50%;
+    /* transform-property: all;
+    transition-duration: 2s; */
+    /* transition-timing-function: steps(5); */
+    /* transition-timing-function: ease-in; */
+    /* transition-delay:2s ; */
+    /* transition: all 1s ease-in 1s; */
+    position: absolute;
+    top: 100px;;
+    left: 100px;
+    /* transform: rotate(45deg); */
+    /* transform: scale(2); */
+
+    /* animation-name: colorAnimate;
+    animation-duration: 2s; */
+    /* animation-timing-function: ease-in; */
+    /* animation-delay: 0s;
+    animation-iteration-count: infinite;
+        animation-direction: alternate;*/
+
+        /* Animation Shorthand */
+        animation: colorAnimate 3s ease-in 0s infinite normal;
+
+    
+} 
+
+@keyframes colorAnimate{
+
+    0%{ left: 0px;
+          background-color: yellow;
+
+    }
+    50%{ left: 200px;
+         background-color: red;
+         color: white;
+    }
+    100%{ left: 400px;
+          background-color: blue;
+}
+}
+
+
+div:hover{
+    /* background-color: red;
+    color: white;
+    font-size: 25px; */
+    /* transform: scale(2); */
+    /* transform: translatex(200px); or bhi hai iski uper,niche , left , right property */
+    /* transform: skew(30deg); */
+}
+
