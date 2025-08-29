@@ -4,14 +4,23 @@ div{
     background-color: aqua;
     border: solid black;
     display: inline-block;
+    color: white;
 }
 
 #box1{
     position: static;
+    
 }
 
 
 #box2{
-    position: relative;
+    position: sticky;
     /* top: 10px; */
+    
+}
+
+.mainbox{
+    height: 400px;
+    width: 600px;
+    background-color: yellow;
 }
