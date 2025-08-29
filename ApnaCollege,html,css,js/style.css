@@ -1,0 +1,43 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: aqua;
+    display: inline-block;
+    color: white;
+}
+
+#box1{
+    position: static; 
+    /* koi change nahi hoga isme */
+    background-color: red;
+}
+
+#box2{
+    position: relative;
+    top: 10px;
+    /* kud ki jagah se change , shift hona  */
+    background-color: green;
+}
+
+#box3{
+    position: absolute;
+    /* apne relative ancestor k hisab se change hoga , position absolute dene k baad bo uper uth jata hai */
+    background-color: black;
+    top: 20px;
+}
+
+#box4{
+    position: fixed;
+    color: red;
+    top: 0px;
+    /* relative to brawser, pure pure documents k side se sift hoga */
+
+}
+
+/* position sticky jab bo apni sahi position pe pahuch jata , to wahi bo stick ho jata hai . */
+
+/* 
+z-index ko hum tab use karte hai jab hme kisi ko uper dikhanan hota hai, jese koi stack hai or hame sabse niche wale box ko uper dikhana hai tab hum z index ka use karenge.
+by default sabka ka z index 0 hota hai .
+*/
