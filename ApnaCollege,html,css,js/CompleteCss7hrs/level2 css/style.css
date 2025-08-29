@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-/* 
+
  div{
     height: 150px;
     width: 150px;
@@ -15,9 +15,9 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 5px;
-    padding-top: 3px;
+    padding-top: 13px;
     margin-top: 50px;
-} */
+}
     /*
 
 h1{
@@ -38,7 +38,7 @@ h1{
 button{
     display: block;
 } */
- div{
+ /* div{
     height: 100px;
     width: 100px;
     margin: 25px;
@@ -55,7 +55,7 @@ button{
 }
 #div3{
     background-color: green;
-}
+} */
 /* 
 h1{
     color: rgb(51, 51, 4);

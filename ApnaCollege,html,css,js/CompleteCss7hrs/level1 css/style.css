@@ -1,4 +1,4 @@
-/* *{
+*{
     color: pink;
     margin:0;
     padding: 0;
@@ -6,17 +6,17 @@
 }
 
 h1{
-    color: red;
+    /* color: red; */
 }
 p{
-    color: green;
+    /* color: green; */
 }
-
+/* 
 button{
     color: rgb(61, 196, 31);
-    background-color: rgb(237, 244, 237);
-}
-
+    background-color: rgb(38, 46, 194);
+} */
+/* 
 body{
     background-color: rgb(181, 147, 32);
 } 
@@ -24,23 +24,23 @@ body{
 button{
     background-color: green;
 } */
-
+ 
 
     /* <!-- text property --> */
-    /* h1{
-        text-align: center;
-         text-decoration: underline;
-        text-decoration: overline;
-        text-decoration: line-through; 
-        text-decoration:red dotted underline;
-    } */
+    h1{
+        text-align: center; /* left and right , left = start and right = end*/
+        /* text-decoration: underline; */
+        /* text-decoration: overline; */
+        /* text-decoration: line-through;  */
+        /* text-decoration:red dotted underline; */
+    }
  /* p{
     text-align: center;
  }
 
 a{
     text-decoration: red dotted line-through;
-} */
+}
 
 #one{
     font-size: 25px;
