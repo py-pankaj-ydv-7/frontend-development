@@ -92,14 +92,65 @@
 
 // Q.2 create a game where you start with any random gaemm number. Ask the user to keep guessing the game number until the user the user enters correct value.
 
-let gameNum = 25;
-let userNum = prompt("Guess the game numbr : ");
-console.log(userNum);
+// let gameNum = 25;
+// let userNum = prompt("Guess the game numbr : ");
+// console.log(userNum);
 
 
-while(userNum != gameNum){
-   userNum = prompt("You entered wrong number. Guess again : ");
+// while(userNum != gameNum){
+//    userNum = prompt("You entered wrong number. Guess again : ");
 
-}
+// }
 
-console.log("congratulations, you entered the right number ", gameNum);
+// console.log("congratulations, you entered the right number ", gameNum);
+
+
+
+//********** String ****
+// 
+// is a sequence of characters used to represent text  */
+
+// let str = "Pankaj Yadav";
+// let str2 = 'Khushi';
+
+// console.log(str2[0]);
+
+
+// let obj = {
+//    item : "pen",
+//    price : 10,
+// };
+
+// let output = ` the cost of ${obj.item} is ${obj.price} rupees, litrals wala `;
+// console.log(output);
+
+
+// console.log("the cost of ", obj.item, "is", obj.price," rupees , log wala ");
+
+/****** String Methods in js *****/
+// These are built in function to manipulate a string .
+/* 
+ str.toUpperCase()
+ str.toLowerCase()
+ str.trim() // remove whitespaces
+
+ */
+
+//  let str = "pankaj yadav";
+// //  str = str.toUpperCase() // second method also available.
+
+// let upper = str.toUpperCase()
+
+//  console.log(str.toUpperCase());
+//  console.log(str);
+
+//  console.log(upper);//second method .
+ 
+ 
+  /**** trim method */
+
+  let str ="    Pankaj Yadav  ";
+  console.log(str.trim()); // remove white spaces.
+  
+
+ 
