@@ -64,10 +64,69 @@ let items = [250,645,300,900,50];
 
 // console.log(offer);
 
-for(let i = 0; i< items.length; i++){
-    let offer = items[i]/10;
-    items[i] -= offer;
-}
+// for(let i = 0; i< items.length; i++){
+//     let offer = items[i]/10;
+//     items[i] -= offer;
+// }
 
-console.log(items);
+// console.log(items);
+
+/***** arrays methods  */
+/*
+Push() = add to end , pop() = delete from end & return, toString()= Convert array to string  
+
+*/
+
+
+let fooditems = ["potato", "apple", "litchi","tomato"]
+// console.log(fooditems);
+
+// fooditems.push("banana"); // yr original array me hi change krta hai 
+// console.log(fooditems);
+
+
+/*** pop() */
+
+// let deletedItem=  fooditems.pop()
+// console.log(fooditems);
+// console.log("deletedItem = ",deletedItem);
+
+
+/****  toString() = to convert array into String */
+
+
+// console.log(fooditems.toString()); // ye original array k andar change nahi hota hai . 
+
+
+/***** conCat() method */ // original array ko change nahi karta hai.
+
+let marvelHeroes=["thor","spiderman","ironman","Dr Strange"];
+let dcHeroes = ["superman","batman"];
+ 
+/* unshift() method ye elements ya items ko aage se add karta hai  */
+marvelHeroes.unshift("Antman");
+let Honda = marvelHeroes.concat(dcHeroes);
+
+console.log(Honda);
+
+
+console.log(marvelHeroes);
+
+/*** shift () method ye aage se delet kar deta hai element ya items ko  */
+
+// marvelHeroes.shift();
+// console.log(marvelHeroes);
+
+
+/*** slice (), return a piece of the array */
+// eg .  slice(startids,endidx) ===> kabh kabhi iska array ki copy banana k liye bhi use karte hai .
+
+// console.log(marvelHeroes);
+// console.log(marvelHeroes.slice(1,3));
+
+
+
+/**** splice() method : change array (add,remove, replace) */
+// eg. splice(startidx, delCount, newEl1...) // ye original array k andhar change karta hai .
+
 
