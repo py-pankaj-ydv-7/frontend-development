@@ -44,7 +44,9 @@
     
 // }while(i<=5);
 
-// ************** for of loop ***********, mostly use with arrays, stringds
+// // ************** for of loop ***********, mostly use with arrays, stringds
+// console.log("*****************for of loop ***************");
+
 
 // let str = "ApnaCollege * PANKAJ YADAV";
 // let length=0;
@@ -59,17 +61,20 @@
 
 // use in objects and arrays , ye loop hame key return karta hai kisi bhi value ki .
 
-// let sutudent = {
-//     name: "Pankaj Yadav",
-//     age : 24,
-//     cgpa: 8.28,
-//     isPass: true
-// }
+console.log("************************** for in loop **************");
 
-// for(let key in sutudent){
-//     console.log(k , "key and value ",sutudent[key]);
+
+let sutudent = {
+    name: "Pankaj Yadav",
+    age : 24,
+    cgpa: 8.28,
+    isPass: true
+}
+
+for(let key in sutudent){
+    console.log(key ,  "key and value ",sutudent[key]);
     
-// }
+}
 
 
 // let's practice
@@ -149,7 +154,7 @@
  
   /**** trim method */
 
-  let str ="    Pankaj Yadav  ";
+  let strp ="    Pankaj Yadav  ";
   console.log(str.trim()); // remove white spaces.
   
 
