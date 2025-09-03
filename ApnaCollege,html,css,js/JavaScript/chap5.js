@@ -145,11 +145,70 @@ Arr.forEach((val,idx,arr)=>{
 
 // Practice Question 
 // for a given array of numbers, print the square of each value using the forEach loop.
-console.log("practice Questions ");
+// console.log("practice Questions ");
 
-let Mrr = [1,2,3,4,5];
+// let Mrr = [1,2,3,4,5];
 
-Mrr.forEach((val,idx)=>{
-  console.log(val*val,idx);
+// Mrr.forEach((val,idx)=>{
+//   console.log(val*val,idx);
   
-})
+// })
+
+
+/******* most imp , Map method , iska new array banta hai . */// mainly use for a create a new array for return value
+
+// let num = [1,2,3,4,5];
+
+// let newArr = num.map((val)=>{
+//   return val**2;
+  
+// });
+
+// console.log(newArr);
+// console.log(num);
+
+/******* most important *******/
+/************** Filter ********/
+// Create a new array of elements that give true for a condition/ filter. Eg. all even elements. // isme me bhi new array banta hai.
+
+/* 
+ let newArr = arr.filter((val)=>{
+
+  return val % 2===0;
+  
+  })
+
+  */
+
+// let numArr = [1,2,3,4,5,6,7];
+
+// let evenArr = numArr.filter((val)=>{
+//   return val%2===0;
+// })
+
+// console.log(evenArr);
+
+/***** most impo , Reduse method of Arrays */
+// Reduce 
+// perform some operations & reduce the array to a single value. it returns that single value.
+
+// eg. 
+
+// let Prr = [1,2,3,4];
+
+// const output = Prr.reduce((res,curr)=>{
+//   return res + curr;
+// })
+
+// console.log(output);
+
+// find out the largest no.
+
+let prr = [1,2,3,4];
+
+const output = prr.reduce((res,curr)=>{
+  return res > curr ? res : curr;
+});
+
+console.log(output);
+
