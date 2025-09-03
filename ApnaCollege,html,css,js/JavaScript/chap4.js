@@ -107,10 +107,10 @@ let dcHeroes = ["superman","batman"];
 marvelHeroes.unshift("Antman");
 let Honda = marvelHeroes.concat(dcHeroes);
 
-console.log(Honda);
+// console.log(Honda);
 
 
-console.log(marvelHeroes);
+// console.log(marvelHeroes);
 
 /*** shift () method ye aage se delet kar deta hai element ya items ko  */
 
@@ -129,4 +129,50 @@ console.log(marvelHeroes);
 /**** splice() method : change array (add,remove, replace) */
 // eg. splice(startidx, delCount, newEl1...) // ye original array k andhar change karta hai .
 
+
+let arr = [ 1,2,3,4,5,6,7];
+
+// arr.splice(2,2,1001,1220)
+
+// you only add element
+
+// arr.splice(2,0,103)
+// console.log(arr);
+
+//Delete Element
+
+// arr.splice(3,1)
+// console.log(arr);
+
+
+//  Replace Element
+// arr.splice(3,1,101)
+// console.log(arr);
+
+
+// arr.splice(4);
+// console.log(arr);
+
+
+//Qs. create an arry to store companies => "Blooming","MicroSoft","Uber","IBM","Netflix"
+
+/*  
+a. Remove the first company from the array
+b. Remove Uber & ola in its place 
+c. Add Amazone at the end 
+
+*/
+
+let companies =["Blooming","MicroSoft","Uber","IBM","Netflix"];
+console.log("Before applying methods : ",companies);
+
+
+// companies.shift()
+// console.log("After applying methods : ",companies);
+
+// companies.splice(2,1,"ola")
+// console.log("after applying method : ",companies);
+
+companies.push("Amazon")
+console.log("after applying methods : ",companies);
 
