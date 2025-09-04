@@ -1,0 +1,22 @@
+/* .heading{
+    color: blue;
+    background-color: yellow;
+}
+
+body{
+    background-color: pink;
+}
+
+button{
+    background-color: black;
+    color: white;
+} */
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    text-align: center;
+    margin: 5px;
+    background-color: aquamarine;
+}
