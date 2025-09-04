@@ -1,3 +1,5 @@
+/*************************************** loop & String ************************/
+
 
 // print 1 to 5 
 
@@ -64,17 +66,17 @@
 console.log("************************** for in loop **************");
 
 
-let sutudent = {
-    name: "Pankaj Yadav",
-    age : 24,
-    cgpa: 8.28,
-    isPass: true
-}
+// let sutudent = {
+//     name: "Pankaj Yadav",
+//     age : 24,
+//     cgpa: 8.28,
+//     isPass: true
+// }
 
-for(let key in sutudent){
-    console.log(key ,  "key and value ",sutudent[key]);
+// for(let key in sutudent){
+//     console.log(key ,  "key and value ",sutudent[key]);
     
-}
+// }
 
 
 // let's practice
@@ -154,8 +156,19 @@ for(let key in sutudent){
  
   /**** trim method */
 
-  let strp ="    Pankaj Yadav  ";
-  console.log(str.trim()); // remove white spaces.
-  
+  let strp ="Pankaj Yadav";
+//   console.log(str.trim()); // remove white spaces.
+
+// console.log(strp.replace("pankaj","shubham"))
+
+  let shub = strp.replace("Pankaj","Shubham")
+
+  console.log("Replace method try and check ");
+//   strp.replace("Pankaj","shubham");
+console.log(strp);
+console.log(shub);
+console.log(strp.charAt(5));
+
+
 
  

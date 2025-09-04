@@ -126,13 +126,13 @@ let multi = (x, y) => {
 
 /***** most important loop forEach loop in arrays */
 
-let Arr =[1,2,3,4,5];
+let Arr = [1, 2, 3, 4, 5];
 
 // Arr.forEach(function(val){
 //   console.log(val);   // ye hota hai callback function , isko genrally forEach me arrow function me pass krte hai .
 // })
 
-Arr.forEach((val,idx,arr)=>{
+Arr.forEach((val, idx, arr) => {
   // console.log(val,idx,arr); // ye kar di arrow fun me .
   // val = for value
   // idx = for index
@@ -141,9 +141,9 @@ Arr.forEach((val,idx,arr)=>{
 
 // forEach use for only arrays ******** most impo.
 
-// theory pad li or notes bana liye copy me 
+// theory pad li or notes bana liye copy me
 
-// Practice Question 
+// Practice Question
 // for a given array of numbers, print the square of each value using the forEach loop.
 // console.log("practice Questions ");
 
@@ -151,17 +151,16 @@ Arr.forEach((val,idx,arr)=>{
 
 // Mrr.forEach((val,idx)=>{
 //   console.log(val*val,idx);
-  
+
 // })
 
-
-/******* most imp , Map method , iska new array banta hai . */// mainly use for a create a new array for return value
+/******* most imp , Map method , iska new array banta hai . */ // mainly use for a create a new array for return value
 
 // let num = [1,2,3,4,5];
 
 // let newArr = num.map((val)=>{
 //   return val**2;
-  
+
 // });
 
 // console.log(newArr);
@@ -189,10 +188,10 @@ Arr.forEach((val,idx,arr)=>{
 // console.log(evenArr);
 
 /***** most impo , Reduse method of Arrays */
-// Reduce 
+// Reduce
 // perform some operations & reduce the array to a single value. it returns that single value.
 
-// eg. 
+// eg.
 
 // let Prr = [1,2,3,4];
 
@@ -204,11 +203,52 @@ Arr.forEach((val,idx,arr)=>{
 
 // find out the largest no.
 
-let prr = [1,2,3,4];
+// let prr = [1,2,3,4];
 
-const output = prr.reduce((res,curr)=>{
-  return res > curr ? res : curr;
-});
+// const output = prr.reduce((res,curr)=>{
+//   return res > curr ? res : curr;
+// });
 
-console.log(output);
+// console.log(output);
 
+// practice questions ***************
+
+//Qs.1 We are given array of marks of students .Filter out of the marks of students that scored 90+.
+
+// let arrM = [97,64,32,49,99,96,86];
+
+// let Scores = arrM.filter((val) => {
+//   return val > 90;
+  
+// });
+
+// console.log("Original array = " ,arrM);
+// console.log("90+ marks = ",Scores);
+
+
+//Q2. Take a number n as input from user. Create an array of numbers from 1 to n .
+//Use the reduce method to calculate sum of all numbers in the array.
+// Use the reduce method to calculate product of all numbers in the array.
+
+
+let n = prompt("enter a number : ");
+
+let numArr = [];
+
+for(let i = 1; i<=n; i++){
+  numArr[i-1]= i; // 1(0), 2(1), 3(2), 4(3)
+}
+
+console.log("numArr = >",numArr);
+
+let calSum = numArr.reduce((res,curr)=>{
+  return res+curr;
+})
+
+console.log("Calculate Sum => ",calSum);
+
+
+let calProduct = numArr.reduce((res,curr)=>{
+  return res * curr;
+})
+console.log("Calculate Product => ",calProduct);
