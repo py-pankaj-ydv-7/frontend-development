@@ -51,16 +51,41 @@ node.append(el) // adds after the  node (outside)
 // newBtn.style.backgroundColor="green";
 // newBtn.style.color="white";
 
-let newHeading = document.createElement("h1");
-newHeading.innerHTML = "<i>this is new Heading</i>";
+// let newHeading = document.createElement("h1");
+// newHeading.innerHTML = "<i>this is new Heading</i>";
 
 
-document.querySelector("body").prepend(newHeading);
+// document.querySelector("body").prepend(newHeading);
 
 
-newHeading.style.backgroundColor="green"
+// newHeading.style.backgroundColor="green"
 
-let para = document.querySelector("p")
-para.remove() // is se elemet remove ho gaya.
+// let para = document.querySelector("p")
+// para.remove() // is se elemet remove ho gaya.
 
-newHeading.remove()// ye bhi remove ho gaya.
+// newHeading.remove()// ye bhi remove ho gaya.
+
+
+//Qs.  let's practice questions ************
+//create a new button element. Give it a text "click me ", background color of red & text color of white. Insert the button as the first element inside the body tag.
+
+
+
+
+// let hwBtn = document.createElement("button");
+// hwBtn.innerText="click me!";
+// hwBtn.style.backgroundColor="red";
+// hwBtn.style.color="white";
+
+// document.querySelector("body").prepend(hwBtn);
+
+
+// done
+
+// Qs2. Create a <p> tag in html, give it a class & some styling. now create a new class in css and try to append this class to the <p> element 
+// Did you notice, how you overwrite the class name when you add a new ________ Solve this problem using classList.
+
+let para = document.querySelector("p");
+
+para.getAttribute("class");
+para.classList.add("newClass");
