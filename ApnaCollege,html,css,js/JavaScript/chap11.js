@@ -78,43 +78,77 @@
 
 //********************** Inheritance **************/
 
-class Parent {
-    hello(){
-        console.log("hello");
+// class Parent {
+//     hello(){
+//         console.log("hello");
         
-    }
-}
+//     }
+// }
 
-class child extends Parent{};
+// class child extends Parent{};
 
-let obj = new child();
+// let obj = new child();
 
 
-class Person {
-    constructor(name){
-        this.species = "homo sapiens";
-        this.name = name;
-    }
-    eat(){
-        console.log("eat");
+// class Person {
+//     constructor(name){
+//         this.species = "homo sapiens";
+//         this.name = name;
+//     }
+//     eat(){
+//         console.log("eat");
         
-    }
+//     }
     // sleep(){
     //     console.log("sleep");
         
     // }
+// }
+
+// class Engineer extends Person {
+//     constructor(name,branch){
+//         super(name); // to invoke parent class constructor
+//         this.branch = branch;
+//         this.name = name
+//     }
+//     work(){
+//         console.log("solve problems, build something");
+//     }
+// }
+
+// let engObj = new Engineer("pankaj","IT");
+
+
+
+// **************** let's practice question **************************
+
+//Qs. You are creating a website for your college .create a class User with 2 properties, name & email. it also has a method called viewData() that allows user to view website data.
+
+let data = "secret information";
+class User{
+    constructor(name,email){
+        this.name=name;
+        this.email=email;
+    }
+    viewData(){
+        console.log(`"data = ${data}`);
+        
+    }
 }
 
-class Engineer extends Person {
-    constructor(name,branch){
-        super(name); // to invoke parent class constructor
-        this.branch = branch;
-        this.name = name
+let student1 = new User("pankaj","pankajyadav851685@gmail.com")
+
+let student2 = new User("Aman","abc@email.com")
+
+//Qs. Create a new class called Admin which inherits from User. Add a new method called editData to admin that allows it to edit website data.
+
+class Admin extends User{
+    constructor(name,email){
+        super(name,email);
     }
-    work(){
-        console.log("solve problems, build something");
+    editData(){
+        data= "some new value"
     }
 }
 
-let engObj = new Engineer("pankaj","IT");
-
+let admin1 = new Admin("pankaj","yadava@email.com");
